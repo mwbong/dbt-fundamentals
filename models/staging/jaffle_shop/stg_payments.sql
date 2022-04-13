@@ -5,4 +5,4 @@ select
     status,
     created as created_at,
     amount/100 as amount
-from mineral-origin-347001.jaffle_shop.payment
+from {{ source('jaffle_shop','payment')}}

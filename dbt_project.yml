@@ -36,6 +36,9 @@ models:
     staging:
       +materialized: view
     marts:
-      +materialized: table
+      core:
+        +materialized: table
+      report:
+        +materialized: view
     
 

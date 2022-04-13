@@ -3,4 +3,4 @@ select
     first_name,
     last_name
 
-from mineral-origin-347001.jaffle_shop.customers
+from {{ source('jaffle_shop','customers')}}
