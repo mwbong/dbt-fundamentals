@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: mineral-origin-347001
+    schema: jaffle_shop
+    tables:
+      - name: orders
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+      - name: payment
+      - name: customers
